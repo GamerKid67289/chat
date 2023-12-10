@@ -1,37 +1,40 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat App</title>
-    <style>
-        #chat-container {
-            max-width: 400px;
-            margin: 0 auto;
-        }
-        #chat-messages {
-            border: 1px solid #ccc;
-            padding: 10px;
-            height: 300px;
-            overflow-y: scroll;
-        }
-        #user-input {
-            margin-top: 10px;
-        }
-    </style>
+  <title>Chat App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+    form {
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px10px;
+      font-size: 18px;
+      border: 1px solid #ccc; }
+    form button {
+      width: 25%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #3e8e41;
+    }
+  </style>
 </head>
 <body>
-
-<div id="chat-container">
-    <div id="chat-messages"></div>
-    <div id="user-input">
-        <input type="text" id="name-input" placeholder="Your Name">
-        <input type="text" id="message-input" placeholder="Type your message">
-        <button onclick="sendMessage()">Send</button>
-    </div>
-</div>
-
-<script src="app.js"></script>
+  <h1>Chat App</h1>
+  <form>
+    <label for="message">Message:</label>
+    <input type="text" id="message" name="message"><br><br>
+    <button type="button" onclick="sendMessage()">Send</button>
+  </form>
+  <div id="chat-log"></div>
+  <script src="chat.js"></script>
 </body>
 </html>

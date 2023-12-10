@@ -1,40 +1,24 @@
+Sure! Here's a simple example of a chat app using HTML, CSS, and JavaScript:
+
+HTML:
+```html
 <!DOCTYPE html>
 <html>
 <head>
   <title>Chat App</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-    }
-    form {
-      margin: 0 auto;
-      padding: 20px;
-      border: 1px solid #ccc;
-      box-shadow: 0 0 10px10px;
-      font-size: 18px;
-      border: 1px solid #ccc; }
-    form button {
-      width: 25%;
-      padding: 10px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-    form button:hover {
-      background-color: #3e8e41;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <h1>Chat App</h1>
-  <form>
-    <label for="message">Message:</label>
-    <input type="text" id="message" name="message"><br><br>
-    <button type="button" onclick="sendMessage()">Send</button>
-  </form>
-  <div id="chat-log"></div>
-  <script src="chat.py"></script>
+  <div id="chat-container">
+    <div id="chat-messages"></div>
+    <input type="text" id="message-input" placeholder="Type your message...">
+    <button id="send-button">Send</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
+
+
+

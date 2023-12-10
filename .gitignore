@@ -1,3 +1,0 @@
-git init
-touch .gitignore
-node_modules/
